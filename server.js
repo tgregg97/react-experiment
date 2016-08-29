@@ -3,6 +3,8 @@ var express = require('express');
 var path = require('path');
 var app = express();
 var ejs = require('ejs');
+
+/*
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var url = 'mongodb://localhost:27017/Mern';
@@ -42,6 +44,7 @@ MongoClient.connect(url, function(err, db) {
     });
   });
 });
+*/
 
 app.engine('html', require('ejs').renderFile);
 app.set('view engine','ejs');
