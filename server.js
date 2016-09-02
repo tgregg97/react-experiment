@@ -49,7 +49,7 @@ MongoClient.connect(url, function(err, db) {
 app.engine('html', require('ejs').renderFile);
 app.set('view engine','ejs');
 app.use('/static/scripts', express.static('dist'));
-app.get('/',function(req,res){
+app.get('*',function(req,res){
   return res.render(__dirname + '/index.html');
 });
 app.get('/buttons',function(req,res){

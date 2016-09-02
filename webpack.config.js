@@ -16,7 +16,10 @@ var config = {
         query: {
           presets: ['es2015','react']
         }
-      }
+      },
+      { test: /\.less/, loader: 'style!css!less' },
+      { test: /\.css/, loader: 'style!css' },
+      { test: /\.(woff2|woff|ttf|svg|eot)$/, loader: 'file' }
     ]
   },
   node: {
